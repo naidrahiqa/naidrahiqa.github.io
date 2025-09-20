@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Naidrahiqa">
+    <title>Naidrahiqa - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="nav-content">
+        <ul>
+            <li onclick="scrollToSection('home')" class="active">Home</li>
+            <li onclick="scrollToSection('about')">About</li>
+            <li onclick="scrollToSection('project')">Project</li>
+            <li onclick="scrollToSection('contact')">Contact</li>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+        </ul>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-photo">
+                    <img src="img/profile.png" alt="Naidrahiqa Profile" />
+                </div>
+                <h1>Hi! I'm Faqih Ardian Syah</h1>
+                <div class="subtitle">Call me Naidrahiqa</div>
+                <div class="description">
+                    Siswa TKJ SMKN 3 Jepara tahun kedua yang passionate dalam dunia teknologi informasi, 
+                    networking, dan pemrograman. Selalu siap untuk belajar dan berkembang!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="content-section">
+                <h2>Tentang Saya</h2>
+                <div class="about-grid">
+                    <div class="profile-photo">
+                        <img src="img/profile.png" alt="Profile Photo" />
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            Halo! Saya Faqih Ardian Syah, atau biasa dipanggil Naidrahiqa. 
+                            Saat ini saya adalah siswa tahun kedua di jurusan Teknik Komputer dan Jaringan (TKJ) 
+                            di SMKN 3 Jepara.
+                        </p>
+                        <p>
+                            Saya memiliki passion yang besar dalam dunia teknologi, khususnya dalam bidang 
+                            jaringan komputer, pemrograman, dan troubleshooting sistem. Selama menempuh 
+                            pendidikan di TKJ, saya telah mempelajari berbagai hal mulai dari dasar-dasar 
+                            networking hingga konfigurasi server.
+                        </p>
+                        <p>
+                            Saya selalu antusias untuk belajar teknologi baru dan berpartisipasi dalam 
+                            proyek-proyek yang menantang. Cita-cita saya adalah menjadi seorang Network Engineer 
+                            atau System Administrator yang handal.
+                        </p>
+                    </div>
+                </div>
+                
+                <h3 class="skills-title">Keahlian yang Dipelajari</h3>
+                <div class="skills">
+                    <div class="skill-item">Jaringan Komputer</div>
+                    <div class="skill-item">Konfigurasi Router</div>
+                    <div class="skill-item">Troubleshooting</div>
+                    <div class="skill-item">HTML & CSS</div>
+                    <div class="skill-item">Linux Server</div>
+                    <div class="skill-item">Windows Server</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT SECTION -->
+    <section id="project" class="section">
+        <div class="container">
+            <div class="content-section">
+                <h2>Proyek Saya</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <span>🌐 Network Project</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Konfigurasi Jaringan LAN Sekolah</h3>
+                            <p>
+                                Proyek konfigurasi jaringan LAN di laboratorium komputer sekolah. 
+                                Meliputi setup router, switch, dan konfigurasi IP addressing untuk 
+                                30 komputer client.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">
+                            <span>🔧 Server Setup</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Web Server Configuration</h3>
+                            <p>
+                                Membangun dan mengkonfigurasi web server menggunakan Apache di Ubuntu Server. 
+                                Termasuk setup virtual hosts dan SSL certificate untuk keamanan.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">
+                            <span>💻 Website</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Personal Portfolio Website</h3>
+                            <p>
+                                Website portfolio personal yang dibuat menggunakan HTML, CSS, dan JavaScript. 
+                                Menampilkan informasi tentang diri, keahlian, dan proyek-proyek yang telah dikerjakan.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">
+                            <span>📱 Mobile Config</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Hotspot Management System</h3>
+                            <p>
+                                Konfigurasi sistem manajemen hotspot menggunakan MikroTik untuk warnet sekolah. 
+                                Termasuk bandwidth management dan user authentication.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">
+                            <span>🛡️ Security</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Network Security Implementation</h3>
+                            <p>
+                                Implementasi keamanan jaringan dasar termasuk konfigurasi firewall, 
+                                access control list, dan monitoring sistem keamanan jaringan.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">
+                            <span>⚙️ Automation</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Network Monitoring Script</h3>
+                            <p>
+                                Script otomasi untuk monitoring status jaringan menggunakan Python. 
+                                Dapat mendeteksi device yang down dan mengirim notifikasi otomatis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="content-section">
+                <h2>Hubungi Saya</h2>
+                <p class="contact-description">
+                    Mari terhubung dengan saya melalui platform social media berikut ✨
+                </p>
+                
+                <div class="social-media-grid">
+                    <a href="https://instagram.com/naidrahiqa" class="social-item instagram" target="_blank">
+                        <div class="social-icon">📷</div>
+                        <div>
+                            <strong>Instagram</strong><br>
+                            @naidrahiqa
+                        </div>
+                    </a>
+
+                    <a href="https://twitter.com/naidrahiqa" class="social-item twitter" target="_blank">
+                        <div class="social-icon">🐦</div>
+                        <div>
+                            <strong>Twitter / X</strong><br>
+                            @naidrahiqa
+                        </div>
+                    </a>
+
+                    <a href="https://facebook.com/Hyqfa" class="social-item facebook" target="_blank">
+                        <div class="social-icon">📘</div>
+                        <div>
+                            <strong>Facebook</strong><br>
+                            Hyqfa
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/naidrahiqa" class="social-item telegram" target="_blank">
+                        <div class="social-icon">✈️</div>
+                        <div>
+                            <strong>Telegram</strong><br>
+                            @naidrahiqa
+                        </div>
+                    </a>
+                </div>
+
+                <div class="contact-footer">
+                    <p>
+                        Jangan ragu untuk menghubungi saya kapan saja! 💕
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
